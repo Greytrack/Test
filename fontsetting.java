@@ -20,7 +20,7 @@ VOID OnPaint(HDC hdc)
     PointF      pointF(10.0f, 20.0f);
     
     TextRenderingHint t =  graphics.GetTextRenderingHint();//获取平滑模式
-
+    TextRenderingHint e = graphics.GetTextRenderingHint();//获取平滑模式
     graphics.SetTextRenderingHint(TextRenderingHintSystemDefault);
     graphics.DrawString(L"字体平滑测试", -1, &font, pointF, &brush);
     
